@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+  body{
+	  background:#090;
+	 }
+  .ball{
+	   width:100px;
+	   height:100px;
+	   background:#f8f8f8;
+	   border-radius:50%;
+	   text-align:center;
+	   line-height:100px;
+	   box-shadow:0px 0px 80px #666 inset;
+	   margin:10px;
+	}
+	.ball1{
+	   animation:ball1Move 10s ease-out;
+	}
+	.ball2{
+		position:absolute;
+		top:300px;
+		left:300px;
+		animation:ball2Move 8s ease-out 2s;
+	}
+	.ball3{
+		position:absolute;
+		top:523px;
+		left:523px;
+		animation:ball3Move 6.4s ease-out 3.6s;
+	}
+	.ball4{
+		position:absolute;
+		top:449px;
+		left:880px;
+		animation:ball4Move 2.5s ease-out 7.5s;
+	}
+	.ball5{
+		position:absolute;
+		top:249px;
+		left:900px;
+		animation:ball5Move 1.4s ease-out 8.6s;
+	}
+	@keyframes ball1Move{
+		0%{
+			transform:translate(0,0);
+		}
+		20%{
+			transform:translate(200px,270px);
+		}
+		100%{
+			transform:translate(50px,550px);
+		}
+	}
+	@keyframes ball2Move{
+		0%{
+			transform:translate(0,0);
+		}
+		20%{
+			transform:translate(140px,170px);
+		}
+		100%{
+			transform:translate(400px,-40px);
+		}
+	}
+	@keyframes ball3Move{
+		0%{
+			transform:translate(0,0);
+		}
+		10%{
+			transform:translate(30px,35px);
+		}
+		60%{
+			transform:translate(300px,-150px);
+		}
+		100%{
+			transform:translate(400px,-200px);
+		}
+	}
+	@keyframes ball4Move{
+		0%{
+			transform:translate(0,0);
+		}
+		100%{
+			transform:translate(120px,40px);
+		}
+	}
+	@keyframes ball5Move{
+		0%{
+			transform:translate(0,0);
+		}
+		100%{
+			transform:translate(100px,-40px);
+		}
+	}
+</style>
+</head>
+
+<body>
+   <div class="ball ball1"></div>
+   <div class="ball ball2"></div>
+   <div class="ball ball3"></div>
+   <div class="ball ball4"></div>
+   <div class="ball ball5"></div>
+</body>
+</html>
